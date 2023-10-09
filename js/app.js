@@ -36,9 +36,13 @@ let numberComputer = parseInt(getRandomArbitrary(1, 6));
 // - Confrontare i numeri
 let numbersRandomArray = [numberUser, numberComputer];
 
+//     - Inizializzare un'array che contenga i due numeri estratti
 numbersRandomArray.toSorted();
 
+//     - Utlizzare la funzione toSorted per metterli in ordine
 let winner = numbersRandomArray.toSorted()[1];
+
+// - Stampare messaggio vincitore in base al risultato
 let messageWinner;
 
 if(numberUser === numberComputer){
@@ -52,8 +56,10 @@ else if (winner === numberComputer) {
     messageWinner = 'Vittoria Computer'
 }
 
-// - Stampare messaggio vincitore
 console.log('Il tuo numero: '+ numberUser + ' Il numero del computer: '+ numberComputer + ' Il risultato è: ' + messageWinner )
+
+
+
 
 function getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;
