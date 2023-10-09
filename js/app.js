@@ -48,13 +48,13 @@ if(numberUser === numberComputer){
 }
 
 else if (winner === numberUser) {
-    messageWinner = 'Vittoria Utente'
+    messageWinner = 'Vittoria utente'
 }
 else if (winner === numberComputer) {
-    messageWinner = 'Vittoria Computer'
+    messageWinner = 'Vittoria computer'
 }
 
-console.log('Il tuo numero: '+ numberUser + ' Il numero del computer: '+ numberComputer + ' Il risultato è: ' + messageWinner )
+console.log('Il tuo numero: '+ numberUser + ' Il numero del computer: '+ numberComputer + ' Il risultato è ' + messageWinner )
 
 
 
