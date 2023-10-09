@@ -1,7 +1,7 @@
 // # Mail
 
 // - Creare array con mail utenti
-const mailsArray = ['pincopallino@gmail.com', 'valeriocarbone@gmail.com', 'boolean123@gmail.com' ,'paolorosso@gmail.com', 'tizio123@gmail.com' ,'caio123@gmail.com'];
+const mailsArray = ['pincopallino@gmail.com', 'valeriocarbone@gmail.com', 'boolean123@gmail.com' ,'paolorossi@gmail.com', 'tizio123@gmail.com' ,'caio123@gmail.com'];
 
 // - Chiedere tramite prompt la mail all'utente
 let userMail = prompt('Inserisci la tua mail');
