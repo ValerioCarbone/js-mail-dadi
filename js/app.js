@@ -37,8 +37,6 @@ let numberComputer = parseInt(getRandomArbitrary(1, 6));
 let numbersRandomArray = [numberUser, numberComputer];
 
 //     - Inizializzare un'array che contenga i due numeri estratti
-numbersRandomArray.toSorted();
-
 //     - Utlizzare la funzione toSorted per metterli in ordine
 let winner = numbersRandomArray.toSorted()[1];
 
