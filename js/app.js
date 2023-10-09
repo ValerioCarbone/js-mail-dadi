@@ -14,7 +14,7 @@ let numberMailsArray = mailsArray.length - 1;
 //      - Controllare l'email inserita con ogni mail presente nell'array
 let message = ('Email inserita non corretta');
 
-for (let i = 0 ; i <= numberMailsArray ; i++) {
+for (let i = 0 ; i < numberMailsArray ; i++) {
     if (userMail === mailsArray[i]) {
         message = ('Email corretta')
         i = numberMailsArray
