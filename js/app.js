@@ -36,9 +36,9 @@ let numberComputer = parseInt(getRandomArbitrary(1, 6));
 // - Confrontare i numeri
 let numbersRandomArray = [numberUser, numberComputer];
 
-//     - Inizializzare un'array che contenga i due numeri estratti
+//     - Inizializzare un'array che contenga i due numeri estratti;
 //     - Utlizzare la funzione toSorted per metterli in ordine
-let winner = numbersRandomArray.toSorted()[1];
+let winner = numbersRandomArray.toSorted()[numbersRandomArray.length-1];
 
 // - Stampare messaggio vincitore in base al risultato
 let messageWinner;
