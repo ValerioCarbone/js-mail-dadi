@@ -12,7 +12,7 @@ let numberMailsArray = mailsArray.length - 1;
 //      - Creare un ciclo for
 //      - Controllare l'email inserita con ogni mail presente nell'array
 //      - Stampare messaggio in funzione del risultato
-let message = ('Email inserita non corretta')
+let message = ('Email inserita non corretta');
 
 for (let i = 0 ; i <= numberMailsArray ; i++) {
     if (userMail === mailsArray[i]) {
@@ -21,7 +21,7 @@ for (let i = 0 ; i <= numberMailsArray ; i++) {
     }
 }
 
-console.log(message)
+console.log(message);
 
 
 
@@ -30,3 +30,32 @@ console.log(message)
 // - Generare numero randomico per il computer
 // - Confrontare i numeri
 // - Stampare messaggio vincitore
+
+let numberUser = parseInt(getRandomArbitrary(1, 6));
+
+let numberComputer = parseInt(getRandomArbitrary(1, 6));
+
+let numbersRandomArray = [numberUser, numberComputer];
+
+numbersRandomArray.toSorted();
+
+let winner = numbersRandomArray[0];
+let messageWinner;
+
+if (winner === numberUser) {
+    messageWinner = 'Vittoria Utente'
+}
+else if (winner === numberComputer) {
+    messageWinner = 'Vittoria Computer'
+}
+
+else{
+    messageWinner = 'Pareggio'
+}
+
+console.log('Il tuo numero: '+ numberUser + ' Il numero del computer: '+ numberComputer + ' Il risultato è: ' + messageWinner )
+
+function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+  
