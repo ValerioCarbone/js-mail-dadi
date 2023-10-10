@@ -17,7 +17,7 @@ let message = ('Email inserita non corretta');
 for (let i = 0; i < numberMailsArray; i++) {
     if (userMail === mailsArray[i]) {
         message = ('Email corretta')
-        i = numberMailsArray
+        i = numberMailsArray   // <-- Bad practice riassegnare i
     }
 }
 
